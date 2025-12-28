@@ -1,5 +1,5 @@
 import express, { Application } from 'express';
-import router from './routes';
+import router from './routes/routes';
 import corsOptions from './config/corsOptions';
 
 // Initialize the express app.
