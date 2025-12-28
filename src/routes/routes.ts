@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import competitions from './controllers/competitionsController';
-import rankings from "./controllers/rankingsController";
-import { teams } from './controllers/getTeams';
+import competitions from '../controllers/competitionsController';
+import rankings from "../controllers/rankingsController";
+import { teams } from '../controllers/getTeams';
 
 const router: Router = Router();
 
