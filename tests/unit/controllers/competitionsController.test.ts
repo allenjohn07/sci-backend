@@ -18,7 +18,7 @@ describe('competitionsController', () => {
 
     await competitions(mockRequest, mockResponse);
 
-    expect(axios.get).toHaveBeenCalledWith('https://sci-temporary-bucket.s3.us-west-2.amazonaws.com/competition.json');
+    expect(axios.get).toHaveBeenCalledWith('https://sci-temporary-bucket.s3.us-west-2.amazonaws.com/competitions.json');
     expect(mockResponse.json).toHaveBeenCalledWith(mockData);
   });
 
