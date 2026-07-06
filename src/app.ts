@@ -1,6 +1,6 @@
 import express, { Application } from 'express';
-import corsOptions from './config/corsOptions';
 import router from './routes/routes';
+import corsOptions from './config/corsOptions';
 
 // Initialize the express app.
 const app: Application = express();
