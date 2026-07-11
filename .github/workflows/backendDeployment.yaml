@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20.x # Use the same Node.js version as your Lambda runtime (Changed to Node 20)
+          node-version: 22.x # Use the same Node.js version as your Lambda runtime
 
       - name: Install dependencies
         run: yarn install
@@ -47,7 +47,7 @@ jobs:
             --handler dist/lambda.handler \
             --timeout 60 \
             --memory-size 512 \
-            --runtime nodejs20.x
+            --runtime nodejs22.x
 
       - name: Run tests
         run: yarn test
